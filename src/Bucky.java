@@ -7,5 +7,6 @@ public class Bucky {
         String s = "asdnasndaldnad wrwerwennknd";
         System.out.println(s.indexOf('n'));
         System.out.println(s.indexOf('n', 5));
+        System.out.println(s.indexOf("wr"));
     }
 }
