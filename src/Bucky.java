@@ -4,6 +4,8 @@
  */
 public class Bucky {
     public static void main(String args[]) {
-        
+        String s = "asdnasndaldnad wrwerwennknd";
+        System.out.println(s.indexOf('n'));
+        System.out.println(s.indexOf('n', 5));
     }
 }
