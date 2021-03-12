@@ -19,7 +19,12 @@ package java8;
  * return value. Examples of pure functions are strlen(), pow(), sqrt() etc. Examples of impure functions are printf(), rand(),
  * time(), etc.
  *
- * 
+ * **immutable state**
+ * State is simply information about something held in memory. Immutable objects(for which none of the state can be changed)
+ * become important when you are dealing with concurrency, the ability for more than one processor in your computer to operate
+ * on that object at the same time. Immutability guarantees that you can rely on the state to be stable and valid for the
+ * object's lifetime.
+ *
  *
  * @param <F>
  * @param <T>
