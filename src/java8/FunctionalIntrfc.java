@@ -13,7 +13,13 @@ package java8;
  * Functional programming deals with certain key concepts such as *pure function*, *immutable state*, *assignment-less*
  * programming.
  *
+ * **pure function**
+ * A function is called pure function if it always returns the same result for same argument values and it has no side effects
+ * like modifying an argument (or global variable) or outputting something. The only result of calling a pure function is the
+ * return value. Examples of pure functions are strlen(), pow(), sqrt() etc. Examples of impure functions are printf(), rand(),
+ * time(), etc.
  *
+ * 
  *
  * @param <F>
  * @param <T>
