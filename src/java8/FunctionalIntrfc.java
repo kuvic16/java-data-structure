@@ -7,6 +7,7 @@ package java8;
 
 /**
  * What is functional programming?
+ * @source: https://www.geeksforgeeks.org/functional-programming-in-java-with-examples/
  * -----------------------------------
  * It is a declarative style of programming rather than imperative. The basic objective of this style of programming is to
  * make code more concise, less complex, more predictable, and easier to test compared to the legacy style of coding.
@@ -24,6 +25,13 @@ package java8;
  * become important when you are dealing with concurrency, the ability for more than one processor in your computer to operate
  * on that object at the same time. Immutability guarantees that you can rely on the state to be stable and valid for the
  * object's lifetime.
+ *
+ * **Functional programming vs Purely functional programming**
+ * Pure functional programming languages don't allow any mutability in its nature whereas a functional style language provides
+ * higher-order functions but often permits mutability at the risk of we failing to do the right things, which put a burden on us
+ * rather than protecting us. So, in general, we can say if a language provides higher-order function it is functional style
+ * language. Java is a functional style language and the language like Haskell is a purely functional programming language.
+ *
  *
  *
  * @param <F>
