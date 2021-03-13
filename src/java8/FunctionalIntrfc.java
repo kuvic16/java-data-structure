@@ -32,6 +32,15 @@ package java8;
  * rather than protecting us. So, in general, we can say if a language provides higher-order function it is functional style
  * language. Java is a functional style language and the language like Haskell is a purely functional programming language.
  *
+ * **Higher-order functions**
+ * In functional programming, functions are to be considered as first-class citizens. That is, so far in the legacy syle of coding,
+ * we can do below stuff with objects.
+ * 1. We can pass objects to a function
+ * 2. We can create objects within functions
+ * 3. We can return objects from a function
+ * 4. We can pass a function to a function
+ * 5. We can create a function within function
+ * 6. We can return a function from a function
  *
  *
  * @param <F>
