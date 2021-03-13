@@ -42,6 +42,18 @@ package java8;
  * 5. We can create a function within function
  * 6. We can return a function from a function
  *
+ * **Pure functions**
+ * A function is called pure function if it always returns the same result for same argument values and it has no side effects like
+ * modifying an argument (or global variable) or outputting something.
+ *
+ * **Lambda expressions**
+ * A Lambda expression is an anonymous method that has mutability at very minimum and it has only a parameter list and a body.
+ * The return type is always inferred based on the context. Also, make note, Lambda expression is:
+ *
+ * (parameter) -> body
+ *
+ * In its simple form, a lambda could be represented as a comma-seprated list of parameters, the -> symbol and the body.
+ *
  *
  * @param <F>
  * @param <T>
