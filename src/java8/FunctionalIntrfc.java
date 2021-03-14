@@ -69,5 +69,9 @@ class FunctionalIntrfc {
         Converter<String, Integer> converter = (from) -> Integer.valueOf(from);
         Integer converted = converter.convert("123");
         System.out.println(converted);
+
+        Converter<String, Integer> converter1 = Integer::valueOf;
+        Integer converted1 = converter1.convert("123");
+        System.out.println(converted);
     }
 }
