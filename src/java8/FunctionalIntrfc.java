@@ -64,7 +64,15 @@ interface Converter<F, T> {
     T convert(F form);
 }
 
+class Something {
+    String startsWith(String s) {
+        return String.valueOf(s.charAt(0));
+    }
+}
+
 class FunctionalIntrfc {
+
+
     public static void main(String[] args) {
         Converter<String, Integer> converter = (from) -> Integer.valueOf(from);
         Integer converted = converter.convert("123");
@@ -73,5 +81,11 @@ class FunctionalIntrfc {
         Converter<String, Integer> converter1 = Integer::valueOf;
         Integer converted1 = converter1.convert("123");
         System.out.println(converted);
+
+        Something something = new Something();
+        Converter<String, String> converter2 = something::startsWith;
+        String converted2 = converter2.convert("Java");
+        System.out.println(converted2);
+
     }
 }
