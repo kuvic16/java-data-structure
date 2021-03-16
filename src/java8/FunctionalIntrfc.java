@@ -70,6 +70,21 @@ class Something {
     }
 }
 
+class Person {
+    String firstName;
+    String lastName;
+
+    Person(){}
+    Person(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+}
+
+interface PersonFactory<P extends Person> {
+    P create(String firstName, String lastName);
+}
+
 class FunctionalIntrfc {
 
 
@@ -86,6 +101,11 @@ class FunctionalIntrfc {
         Converter<String, String> converter2 = something::startsWith;
         String converted2 = converter2.convert("Java");
         System.out.println(converted2);
+
+        PersonFactory<Person> personFactory = Person::new;
+        Person person = personFactory.create("Shaiful", "Islam");
+        System.out.println(person.firstName);
+        System.out.println(person.lastName);
 
     }
 }
