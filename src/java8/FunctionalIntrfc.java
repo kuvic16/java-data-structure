@@ -95,7 +95,7 @@ class FunctionalIntrfc {
 
         Converter<String, Integer> converter1 = Integer::valueOf;
         Integer converted1 = converter1.convert("123");
-        System.out.println(converted);
+        System.out.println(converted1);
 
         Something something = new Something();
         Converter<String, String> converter2 = something::startsWith;
@@ -106,6 +106,24 @@ class FunctionalIntrfc {
         Person person = personFactory.create("Shaiful", "Islam");
         System.out.println(person.firstName);
         System.out.println(person.lastName);
+
+        /**
+         * Lambda Scopes
+         * -------------
+         * Accessing outer scope variables from lambda expressions is very similar to anonymous objects.
+         * You can access final variables from the local outer scope as well as instance fields and static
+         * variables.
+         */
+        final int num = 1;
+        Converter<Integer, String> stringConverter = (from) -> String.valueOf(from + num);
+        System.out.println(stringConverter.convert(2));
+
+
+        int num1 = 1;
+        Converter<Integer, String> stringConverter1 = (from) -> String.valueOf(from + num1);
+        System.out.println(stringConverter.convert(2));
+        //num1 = 3;
+        System.out.println(num1);
 
     }
 }
