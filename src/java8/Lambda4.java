@@ -12,5 +12,13 @@ package java8;
  */
 public class Lambda4 {
     static int outerStaticNum;
+    int outerNum;
+
+    void testScopes() {
+        Converter<Integer, String> stringConverter1 = (from) -> {
+            outerNum = 23;
+            return String.valueOf(from);
+        };
+    }
 
 }
