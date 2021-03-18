@@ -8,7 +8,8 @@ package java8;
 /**
  * Accessing fields and static variables
  *
- * In contrast to local
+ * In contrast to local variables we have both read and write access to instance fields and static
+ * variables from within lambda expressions. This behaviour is well known from anonymous objects.
  */
 public class Lambda4 {
     static int outerStaticNum;
