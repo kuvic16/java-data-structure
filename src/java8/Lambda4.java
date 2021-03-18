@@ -20,6 +20,11 @@ public class Lambda4 {
             outerNum = 23;
             return String.valueOf(from);
         };
+
+        Converter<Integer, String> stringConverter2 = (from) -> {
+            outerStaticNum = 72;
+            return String.valueOf(from);
+        };
     }
 
 }
