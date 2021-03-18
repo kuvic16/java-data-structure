@@ -1,0 +1,4 @@
+Ref: https://www.baeldung.com/java-8-functional-interfaces
+
+1. Lambdas in Java 8
+--------------------
