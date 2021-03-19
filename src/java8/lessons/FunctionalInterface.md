@@ -27,3 +27,12 @@ and a return value:
 `
 public interface Function<T, R> {...}
 `
+
+One of the usage of the "Function" type in the standard library is the Map.computeIfAbsent method. This method returns a value from a
+map by key. but calculates a value if a key is not already present in a map. To calculate a value it uses the passed Function
+implementation
+
+`
+Map<String, Integer> nameMap = new HashMap<>();
+Integer value = nameMap.computeIfAbsent("John", s-> s.length());
+`
