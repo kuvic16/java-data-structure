@@ -17,3 +17,13 @@ conditions. Any interface with a SAM(Single abstract method) is a functional int
 as lambda expressions.
 Note that Java 8's default methods are not abstract and do no count; a functional interface may still have multiple default
 methods. We can observe this by looking at the Function's documentation.
+
+3. Functions
+-----------------------
+The most simple and general case of a lambda is functional interface with a method that receives one value and returns another.
+This function of a single argument is represented by the "function" interface, which is parameterized by the types if its argument
+and a return value:
+
+`
+public interface Function<T, R> {...}
+`
