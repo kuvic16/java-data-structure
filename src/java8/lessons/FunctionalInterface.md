@@ -39,3 +39,16 @@ Integer value = nameMap.computeIfAbsent("John", s-> s.length());
 
 In this case, we will calculate a value by applying a function to a key, put inside a map, and also returned from a method call. We may
 replace the lambda with a method reference that matches passed and returned value types.
+
+`
+Integer value = nameMap.computeIfAbsent("John", String::length);
+`
+
+The Function interface also has a default compose method that allows us to combine several functions into one and execute them sequentially
+
+`
+Function<Integer, String> intToString = Object::toString;
+Function<String, String> quote = s -> "'" + s + "'";
+
+Function<Integer, String> quoteIntToString = quote.compose(intToString);
+`
