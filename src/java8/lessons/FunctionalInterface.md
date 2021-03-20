@@ -36,3 +36,6 @@ implementation
 Map<String, Integer> nameMap = new HashMap<>();
 Integer value = nameMap.computeIfAbsent("John", s-> s.length());
 `
+
+In this case, we will calculate a value by applying a function to a key, put inside a map, and also returned from a method call. We may
+replace the lambda with a method reference that matches passed and returned value types.
