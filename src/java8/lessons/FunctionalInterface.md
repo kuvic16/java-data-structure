@@ -52,3 +52,31 @@ Function<String, String> quote = s -> "'" + s + "'";
 
 Function<Integer, String> quoteIntToString = quote.compose(intToString);
 `
+
+5. Primitive Function Specializations
+--------------------------------
+Since a primitive type can't be a generic type argument, there are versions of the Function interface for the most used primitive types double, int, long and their combinations in
+argument and return types
+
+a) IntFunction, LingFunction, DoubleFunction: arguments are of specified type, return type is parameterized.
+b) ToIntFunction, ToLongFunction, ToDoubleFunction: return type is of specified type, arguments are parameterized.
+c) DoubleToIntFunction, DoubleToLongFunction, IntToDoubleFunction, IntToLongFunction, LongToIntFunction, LongToDoubleFunction: having both argument
+and return type defined as primitive types, as specified by their names
+
+`
+@FunctionalInterface
+public interface ShortToByteFunction {
+    byte applyAsByte(short s);
+}
+`
+
+
+
+
+
+
+
+
+
+
+
