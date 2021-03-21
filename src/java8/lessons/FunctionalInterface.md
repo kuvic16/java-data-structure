@@ -70,6 +70,25 @@ public interface ShortToByteFunction {
 }
 `
 
+Now we can write a method that transforms an array of short to an array of byte using a rule defined by a ShortToByteFunction
+`
+public byte[] transformArray(short[] array, ShortToByteFunction function) {
+    byte[] transformedArray = new byte[array.length];
+    for(int i=0; i<array.length; i++) {
+        transformedArray[i] = function.applyAsByte(array[i]);
+    }
+    return transformedArray;
+}
+`
+
+Here's how we could use it to transform an array of shorts to an array of bytes
+`
+short[] array = {(short) 1, (short) 2, (short) 3};
+byte[] transformedArray = transformArray(array, s -> (byte) (s * 2));
+
+byte[] expectedArray = {(byte) 2, (byte) 4, (byte) 6};
+assertArrayEquals(expectedArray, transformedArray);
+`
 
 
 
