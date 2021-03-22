@@ -90,6 +90,11 @@ byte[] expectedArray = {(byte) 2, (byte) 4, (byte) 6};
 assertArrayEquals(expectedArray, transformedArray);
 `
 
+6. Two-arity function specializations
+----------------------------------
+To define lambdas with two arguments, we have to use additional interfaces that contain interfaces that contain "Bi" keyword in their
+names: BiFunction, ToDoubleBiFunction, ToIntBiFunction, and ToLongBiFunction.
+
 
 
 
