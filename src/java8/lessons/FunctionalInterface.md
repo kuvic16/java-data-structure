@@ -108,7 +108,11 @@ salaries.replaceAll((name, oldValue) ->
     name.equals("Freddy") ? oldValue : oldValue + 10000);
 `
 
+7. Supplier function interface
+-----------------------------------
+A function which does not take in any argument but produces a value of type T. Hence this functional interface takes in only one generic namely:
 
+* T: denotes the type of the result
 
 
 
