@@ -95,9 +95,18 @@ assertArrayEquals(expectedArray, transformedArray);
 To define lambdas with two arguments, we have to use additional interfaces that contain interfaces that contain "Bi" keyword in their
 names: BiFunction, ToDoubleBiFunction, ToIntBiFunction, and ToLongBiFunction.
 
+One of the typical examples of using this interface in the standard API is in the Map.replaceAll method, which alows replacing all values
+in map with some computed valie.
 
+`
+Map<String, Integer> salaries = new HashMap<>();
+salaries.put("John", 4000);
+salaries.put("Freddy", 3000);
+salaries.put("Samuel", 2000);
 
-
+salaries.replaceAll((name, oldValue) ->
+    name.equals("Freddy") ? oldValue : oldValue + 10000);
+`
 
 
 
