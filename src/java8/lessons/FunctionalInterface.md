@@ -114,6 +114,13 @@ A function which does not take in any argument but produces a value of type T. H
 
 * T: denotes the type of the result
 
+The supplier functional interface is yet another Function specialization that does not take any arguments. We typically use it for lazy generation of values.
+For instance, let's define a function that squares a double value. It will not receive a value itself.
 
+`
+public double squareLazy(Supplier<Double> lazyvalue) {
+    return Math.pow(lazyValue.get(), 2);
+}
+`
 
 
