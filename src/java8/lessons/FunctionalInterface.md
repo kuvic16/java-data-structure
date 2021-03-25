@@ -124,3 +124,5 @@ public double squareLazy(Supplier<Double> lazyvalue) {
 `
 
 
+
+
