@@ -147,4 +147,26 @@ Stream<Integer> fibonacci = Stream.generate(() -> {
 });
 `
 
+8. Consumers
+-------------------------------------
+As opposed to the Supplier, the Consumer accepts a generified argument and returns nothing. It is a function that is representing side effects.
+The lambda passed to the List.forEach method implements the Consumer functional interface
+
+`
+List<String> names = Arrays.asList("John", "Freddy", "Samuel");
+names.forEach(name -> System.out.println("Hello, " + name));
+`
+
+There are also specialized versions of the Consumer- DoubleConsumer, IntConsumer and LongConsumer - that receive primitive values as arguments. More
+interesting is the BiConsumer interface. One of its use cases is iterating through the entries of a map:
+
+`
+Map<String, Integer> ages = new HashMap<>();
+ages.put("John", 25);
+ages.put("Freddy", 24);
+ages.put("Samuel", 30);
+
+ages.forEach((name, age) -> System.out.println(name + " is " + age + " years old")
+`
+
 
