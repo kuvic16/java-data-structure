@@ -123,6 +123,28 @@ public double squareLazy(Supplier<Double> lazyvalue) {
 }
 `
 
+This allows us to lazily generate the argument for invocation of this function using a supplier implementation. This can be useful if the generation of the argument
+takes a considerable amount of time. We'll simulate that using Guava's sleepUninterruptibly method:
 
+`
+Supplier<Double> lazyValue = () -> {
+    Uninterruptibles.sleepUninterruptibly(1000, TimeUnit.MILLISECONDS);
+    return 9d;
+}
+
+Double valueSquared = squareLazy(lazyValue);
+`
+
+Stream.generate method implements the Supplier functional interface.
+`
+int[] fibs = {0, 1};
+Stream<Integer> fibonacci = Stream.generate(() -> {
+    int result = fibs[1];
+    int fib3 = fibs[0] + fibs[1];
+    fibs[0] = fibs[1];
+    fibs[1] = fub3;
+    return result;
+});
+`
 
 
