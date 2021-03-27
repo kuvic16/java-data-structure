@@ -169,4 +169,17 @@ ages.put("Samuel", 30);
 ages.forEach((name, age) -> System.out.println(name + " is " + age + " years old")
 `
 
+9. Predicates
+-------------------------------------
+In mathematical logic, a predicate is a function that receives a value and returns a boolean value.
+
+The Predicate functional interface is a specialization of a Function that receives a generified value and returns a boolean. A typical use case of the
+predicate lambda is to filter a collection of values:
+
+`
+List<String> names = Arrays.asList("Angela", "Aaron", "Bob", "Claire", "David");
+
+List<String> namesWithA = names.stream
+`
+
 
