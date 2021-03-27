@@ -197,5 +197,14 @@ Of course, instead of name->name.toUpperCase(), we can simply use a method refre
 names.replaceAll(String::toUpperCase);
 `
 
+One of the most interesting use cases of a BinaryOperator is a reduction operation. Suppose we want to aggregate a collection of integers in a sum of all
+values. With Stream API, we could do this using a collector but a more generic way to do it would be to use the reduce method:
+`
+List<Integer> values = Arrays.asList(3, 5, 8, 9, 12);
+int sum = values.stream().reduce(0, (i1, i2) -> i1 + i2);
+`
+
+11. Legacy Functional Interfaces
+-----------------------------------
 
 
