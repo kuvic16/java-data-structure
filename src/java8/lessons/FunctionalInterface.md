@@ -179,7 +179,23 @@ predicate lambda is to filter a collection of values:
 `
 List<String> names = Arrays.asList("Angela", "Aaron", "Bob", "Claire", "David");
 
-List<String> namesWithA = names.stream
+List<String> namesWithA = names.stream().filter(name -> name.startsWith("A")).collect(Collectors.toList());
 `
+
+10. Operators
+-----------------------------------
+Operator interface are special cases of a function that receive and return the same value type. The UnaryOperator interface receives a single argument.
+One of its use cases in the Collections API is to replace all values in alist with some computed values of the same type
+
+`
+List<String> names = Arrays.asList("bob", "josh", "megan");
+names.replaceAll(name -> name.toUpperCase());
+`
+
+Of course, instead of name->name.toUpperCase(), we can simply use a method refrence
+`
+names.replaceAll(String::toUpperCase);
+`
+
 
 
