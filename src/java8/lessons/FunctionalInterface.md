@@ -206,5 +206,11 @@ int sum = values.stream().reduce(0, (i1, i2) -> i1 + i2);
 
 11. Legacy Functional Interfaces
 -----------------------------------
-
+No all functional interfaces appeared in Java 8. Many interfaces from previous versions of Java conform to the constraints of a FunctionalInterface, and we can
+use them as lambdas. Prominent examples include the Runnable and Callable interfaces that are used in concurrency APIs. In Java 8, these interfaces are also marked
+with a @FunctionalInterfaces annotation.
+`
+Thread thread = new Thread(()-> System.out.println("Hello From Another Thread"));
+thread.start();
+`
 
