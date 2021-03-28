@@ -8,6 +8,8 @@ static methods but can contain only one abstract method. It can also declare met
 Functional interface is also known as Single Abstract Method Interfaces or SAM Interfaces. It is a new feature in Java,
 which helps to achieve functional programming approach.
 
+Example 1:
+---------
 `
 @FunctionalInterface
 interface sayable {
@@ -24,6 +26,49 @@ public class FunctionalInterfaceExample implements sayable{
         fie.say("Hello there");
     }
 }
+`
+
+Example 2:
+----------
+`
+@FunctionalInterface
+interface sayable {
+    void say(String msg); // abstract method
+
+    // It can contain any number of Object class methods.
+    int hashCode();
+    String toString();
+    boolean equals(Object obj);
+}
+
+public class FunctionalInterfaceExample2 implements sayable{
+    public void say(String msg) {
+        System.out.println(msg);
+    }
+
+    public static void main(String[] args){
+        FunctionalInterfaceExample2 fie = new FunctionalInterfaceExample2();
+        fie.say("Hello there");
+    }
+}
 
 `
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
