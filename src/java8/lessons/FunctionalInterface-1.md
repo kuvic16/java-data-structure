@@ -56,6 +56,7 @@ public class FunctionalInterfaceExample2 implements sayable{
 
 Example 3:
 ----------------------
+A functional interface is extending to a non-functional interface
 
 
 
