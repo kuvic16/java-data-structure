@@ -83,7 +83,16 @@ public class FunctionalInterfaceExample3 implements Sayable{
 }
 `
 
+Java Predefined-Functional Interfaces
+-------------------------------------
+Java provides predefined functional interfaces to deal with functional programming by using lambda and method references. You can also
+define your own custom functional interface. Following is the list of functional interface which are placed in java.util.function package.
 
+1. BiConsumer<T,U>: It represents an operation that accepts two input arguments and returns no result.
+2. Consumer<T>: It represents an operation that accepts a single argument and returns no result.
+3. Function<T,R>: It represents a function that accepts one argument and returns a result.
+4. Predicate<T>: It represents a predicate(boolean-valued function) of one argument.
+5. BiFunction<T,U,R>: It represents a function that accepts two arguments and returns a result
 
 
 
