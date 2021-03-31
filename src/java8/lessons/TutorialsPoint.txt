@@ -1,0 +1,12 @@
+Source: https://www.tutorialspoint.com/java8/java8_overview.htm
+
+Overview:
+----------
+
+In Java8 provided supports for functional programming, new JavaScript engine, new APIs for date time manipulation,
+new streaming API etc.
+
+New Features
+1. Lambda expression - Adds functional processing capability to Java.
+2. Method references - Referencing functions by their names instead of invoking them directly. Using functions as parameter.
+3. Default method - Interface to have default method implementation.
