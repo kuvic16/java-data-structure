@@ -15,3 +15,15 @@ New Features
 6. Date Time API - Improved date time API.
 7. Optional - Emphasis on best practises to handle null values properly.
 8. Nashorn, JavaScript Engine - A Java-based engine to execute JavaScript code.
+
+`
+import java.util.Collections;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Comparator;
+
+
+public class Java8Tester {
+    
+}
+`
