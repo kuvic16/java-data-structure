@@ -65,3 +65,36 @@ public class Java8Tester {
     }
 }
 `
+
+Lambda Expressions:
+-------------------
+
+Lambda expressions are introduced in Java 8 and are touted to be the biggest feature of Java 8.
+Lambda expression facilities functional programming, and simplifies the development a lot.
+
+
+Syntax
+A lambda expression is characterized by the following syntax.
+`
+parameter -> expression body
+`
+
+Following are the important characteristics of a lambda expression
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
