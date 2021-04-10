@@ -108,6 +108,12 @@ public class Java8Tester {
 
         // with return statement along with curly braces
         MathOperation multiplication = (int a, int b) -> { return a * b; };
+
+        // without return statement and without curly braces
+        MathOperation division = (int a, int b) -> a / b;
+
+        System.out.println("10 + 5 = " + tester.operate(10, 5, addition));
+        System.out.println("10 - 5 = " + tester.operate(10, 5, subtraction));
     }
 }
 `
