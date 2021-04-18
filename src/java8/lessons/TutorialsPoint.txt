@@ -144,7 +144,38 @@ public class Java8Tester {
 }
 `
 
+*** Lambda expressions are used primarily to define inline implementation of a functional interface,
+i.e., an interface with a single method only. In the above example, we've used various types of lambda
+expressions to define the operation method of MathOperation interface. Then we have defined the imple
+mentation of sayMessage of GreetingService.
 
+*** Lambda expression eliminates the need of anonymous class and gives a very simple yet powerful functional
+programming capability tp Java.
+
+
+Scope:
+-----
+Using lambda expression, you can refer to any final variable or effectively final variable (which is assigned only once)
+Lambda expression throws a compilation error, if a variable is assigned a value the second time.
+
+
+Scope Example:
+--------------
+`
+public class Java8Tester {
+    final static String salutation = "Hello! ";
+
+    public static void main(String args[]) {
+        GreetingService greetService1 = message ->
+        System.out.println(salutation1 + message);
+        greetService1.sayMessage("Tesss");
+    }
+
+    interface GreetingService {
+        void sayMessage(String message);
+    }
+}
+`
 
 
 
