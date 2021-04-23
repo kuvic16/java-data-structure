@@ -1,0 +1,12 @@
+https://www.freecodecamp.org/news/jvm-tutorial-java-virtual-machine-architecture-explained-for-beginners/
+
+What is a Virtual Machine?
+---------------------------
+A virtual machine is a virtual representation of a physical computer. We can call the virtual machine the guest machine, and the physical computer it runs on is the host machine.
+
+A single physical machine can run multiple virtual machines, each with their own operating system and applications. These virtual machines are isolated from each other.
+
+What is the Java virtual machine?
+------------------------------
+C and C++, the code is first compiled into platform-specific machine code. These languages are called compiled languages.
+JavaScript and Python, the computer executes the instructions directly without having to compile them. These languages are called interpreted languages.
