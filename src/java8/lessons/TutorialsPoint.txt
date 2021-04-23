@@ -177,7 +177,35 @@ public class Java8Tester {
 }
 `
 
+https://www.tutorialspoint.com/java8/java8_method_references.htm
+Method References:
+-----------------
 
+Method references help to point to methods by their names. A method reference is described using "::" symbol. A method reference can be used to point the following types of
+methods -
+
+1. Static methods
+2. Instance methods
+3. Constructors using new operator (TreeSet::new)
+
+Method reference example
+----------------------
+`
+import java.util.List;
+import java.util.ArrayList;
+
+public class Java8Tester {
+    public static void main(String args[]) {
+        List names = new ArrayList();
+        names.add("Palash");
+        names.add("Forhad");
+        names.add("Jisan");
+        names.add("Ridoy");
+
+        names.forEach(System.out::println);
+    }
+}
+`
 
 
 
