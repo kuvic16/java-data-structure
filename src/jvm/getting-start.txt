@@ -1,4 +1,5 @@
 https://www.freecodecamp.org/news/jvm-tutorial-java-virtual-machine-architecture-explained-for-beginners/
+https://www.javatpoint.com/jvm-java-virtual-machine
 
 What is a Virtual Machine?
 ---------------------------
@@ -10,3 +11,19 @@ What is the Java virtual machine?
 ------------------------------
 C and C++, the code is first compiled into platform-specific machine code. These languages are called compiled languages.
 JavaScript and Python, the computer executes the instructions directly without having to compile them. These languages are called interpreted languages.
+
+
+Java uses a combination of both techniques. Java code is first compiled into byte code to generate a class file. This class file is then interpreted by the
+Java virtual machine for the underlying platform. The same clas file can be executed on any version of JVM running on any platform and operating system.
+
+Similar to virtual machines, the JVM creates an isolated space on a host machine. This space can be used to execute Java programs irrespective of the platform or
+operating system of the machine.
+
+
+Java virtual machine architecture
+-------------------------------
+The JVM consists of three distinct components:
+
+1. Class Loader
+2. Runtime Memory/Data Area
+3. Execution Engine 
