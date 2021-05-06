@@ -24,6 +24,27 @@ Java virtual machine architecture
 -------------------------------
 The JVM consists of three distinct components:
 
-1. Class Loader
-2. Runtime Memory/Data Area
-3. Execution Engine 
+1. Class Loader [Loading, Linking, Initialization]
+2. Runtime Memory/Data Area [Method Area, Heap Area, Stack Area, PC Register, Native Method Stock]
+3. Execution Engine [Interpreter, JIT Compiler, Garbage Collector] [Native method Interface (JNI)] [Native method library]
+
+
+Class Loader:
+--------------
+when you compile a .java source file, it is converted into byte code as a .class file. When you try to use this class in your program.
+The class loader loads it into the main memory.
+
+The first class to be loaded into memory is usually the class that contains the main() method.
+
+There are three phases in the class loading process: loading, linking and initialzation.
+
+
+a. Loading [Bootstrap class loader, Extension class loader, application class loader]
+b. Linking [Verify, Prepare, Resolve]
+c. Initialization [Initialize]
+
+
+Loading
+-------
+Loading involves taking the binary representation(bytecode) of a class or interface
+with a particular name, and generating the originla class or interface from that.
