@@ -48,3 +48,25 @@ Loading
 -------
 Loading involves taking the binary representation(bytecode) of a class or interface
 with a particular name, and generating the originla class or interface from that.
+
+There are three built-in class loaders available in Java
+
+
+1. Bootstrap class loader - this is the root class loader. It is the superclass of extension class loader and loads
+the standard Java packages like java.like, java.net, java.util, java.io, and so on. These packages are present inside
+the rt.jar file and other core libraries present in the $JAVA_HOME/jre/lib directory.
+
+2. Extension Class Loader - This is the subclass of the bootstrap class loader and the superclass of the application class
+loader. This loads the extensions of standard Java libraries which are present in the
+$JAVA_HOME/jre/lib/ext directory.
+
+
+
+
+
+
+
+
+
+
+
